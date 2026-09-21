@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS 2</title>
+    <link rel="stylesheet" href="format.css">
+
+</head>
+<body bgcolor="#4f7942">
+
+<form action="#" method = "post"></form>
+
+<h1>👤BIODATA DIRI KAMU👤</h1>
+
+
+<fieldset>
+    <legend>AKUN ANDA</legend>
+    <div class="form-group">
+    
+        <label for="nama">Nama Lengkap Anda:</label>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap Anda" required><br><br><br>
+    
+    <label for="pin">PIN ANDA :</label>
+    <input type="password" id="pin" name="pin" placeholder="Masukkan PIN Anda" required><div><br>
+
+</fieldset>
+
+<fieldset>
+    <legend>DATA DIRI</legend><br>
+    
+
+            <label>Jenis Kelamin Anda:</label><br>
+
+            <input type="radio" id="laki-laki" name="jk"value="laki-laki" required>
+            <label style="display: inline-block; margin-right: 10px "for="laki-laki">Laki-laki</label><br>
+
+            <input type="radio" id="perempuan" name="jk"value="perempuan" required>
+            <label style="display: inline-block; margin-right: 10px"for="perempuan">Perempuan</label>
+
+            <br><br>
+
+    <label for="agama">Agama Anda:</label>
+    <select id="agama" name="agama" required>   
+        <option value="">Pilih Agama Anda</option>
+        <option value="islam">Islam</option>
+        <option value="kristen">Kristen</option>
+        <option value="hindu">Hindu</option>
+        <option value="budha">Budha</option>
+        <option value="konghucu">Konghucu</option>
+    </select><br><br><br>
+
+    <label for="alamat">Pendidikan Terakhir:</label>
+    <input type="text" id="" name="Pendidikan Teakhir" placeholder="Masukkan Pendidikan Terakhir Anda" required><br><br><br>
+
+    <label for="email">Email Anda :</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required><div><br><br>
+
+        <div class="checks"></div>
+        <label>Pilih Keahlian Anda</label><div><br>
+            
+            <input type="checkbox" id="Riset-Dan-Analisis-Data" name="keahlian[]">
+            <label style="display: inline-block; margin-right: 10px;"for="Pilih-Keahlian-Anda">Riset dan Analisis Data</label><br>
+
+           <input type="checkbox" id="Publik Speaking" name="keahlian[]"value="Publik Speaking">
+            <label style="display: inline-block; margin-right: 10px;" for="public-speaking">Public Speaking</label><br>
+
+            <input type="checkbox" id="Problem-Solving" name="keahlian[]"value="Problem Solving">
+            <label style="display: inline-block; margin-right: 10px;"for="Problem-Solving">Problem Solving</label><br>
+
+            <input type="checkbox" id="adaptasi Cepat" name="keahlian[]" value="Adaptasi Cepat">
+            <label style="display: inline-block; margin-right: 10px;"for="adaptasi Cepat">Adaptasi Cepat</label>
+
+            <br><br>
+
+            <label for="catatan">Alamat Anda</label><br>
+            
+        <textarea id="catatan" name="catatan" placeholder="Isi Alamat Lengkap Anda Di Sini"></textarea><br>
+            <input type="submit" value="Kirim">
+            </div>
+
+</body>
+</html>
