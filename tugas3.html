@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3</title>
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(130, 216, 130);
+            color: rgb(42, 87, 33);}
+
+            button{
+                background-color: rgb(109, 206, 114);
+                color: rgb(23, 80, 28);}
+
+                input{
+                    box-sizing: border-box;
+                    background-color: rgb(27, 110, 55);}
+                
+            </style>
+</head>
+<body>
+    <h2>CALCULATOR SEDERHANA</h2>
+    <fieldset>
+        <form name="formcalculator" >        
+           <label for="num1">Input Bilangan 1</label>
+            <input type="text" name="bilangan1" size="30" id="num1">
+            <br>
+            <br>
+            <label for="num2">Input Bilangan 2</label>
+            <input type="text" name="bilangan2" size="30" id="num2">
+            <br>
+            <br>
+            
+            <button type="button" onclick="hitung('+')">+</button>
+            <button type="button" onclick="hitung('-')">-</button>
+            <button type="button" onclick="hitung('*')">*</button>
+            <button type="button" onclick="hitung('/')">/</button>
+            <br>
+            <br>
+
+            <label for="out">output</label>
+            <input type="text" name="hasil" id="out">
+        </form>
+    </fieldset>
+
+    <script>
+      function hitung(operator) {
+        let bilangan1 = parseFloat(document.formcalculator.bilangan1.value);
+        let bilangan2 = parseFloat(document.formcalculator.bilangan2.value);
+        let hasil = 0;
+
+        if (isNaN(bilangan1) || isNaN(bilangan2)) {
+            alert("Masukkan angka yang valid!");
+            return;
+        }
+
+        if (operator === '+') {
+            hasil = bilangan1 + bilangan2;
+        } else if (operator === '-') {
+            hasil = bilangan1 - bilangan2;
+        } else if (operator === '*') {
+            hasil = bilangan1 * bilangan2;
+        } else if (operator === '/') {
+            if (bilangan2 === 0) {
+                alert("Pembagi tidak boleh 0");
+                return;
+            }
+            hasil = bilangan1 / bilangan2;
+        }
+
+        document.formcalculator.hasil.value = hasil;
+      }
+    </script>
+</body>
+</html>
